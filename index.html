@@ -41,10 +41,13 @@
 	<script>
 		$(document).ready(function(){
 					
-				$('.container').show();
-				 $('.modal').modal('show');
-				 $('.loader').hide();
-
+				
+				setTimeout(() => {
+				 	 $('.container').show();
+				 	$('.modal').modal('show');
+				 	$('.loader').hide();
+				 	$('.img-loader').hide();
+				}, '3000');
 				 
 
 		});
@@ -257,7 +260,11 @@
 	<!-- FINAL CONTAINER -->
 
 		<div class="text-center border border-white">
-			<div class="loader" class=""></div>
+			
+			<div class="loader" class="">
+				
+			</div>
+
 		</div>
 		
 			
