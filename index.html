@@ -35,7 +35,7 @@
 
 	<script>
 		$(document).ready(function(){
-			$('.modal').modal('show');
+			
 
 		});
 
@@ -56,6 +56,15 @@
 
 <!-- Corpo do HTML -->
 <body >
+
+<script src="https://cdn.jsdelivr.net/gh/AmagiTech/JSLoader/amagiloader.js"></script>
+<script>
+ AmagiLoader.show();
+ setTimeout(() => {
+    AmagiLoader.hide();
+    $('.modal').modal('show');
+ }, 3000);
+</script>
 	<!-- Container -->
 	<div class="container-fluid container ">
 
@@ -229,6 +238,8 @@
 			</div>
 		  </div>
 	</div>
+
+
 
 
 
