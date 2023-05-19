@@ -41,7 +41,11 @@
 
 		$(document).on('click','#btn-aceita-termos-privacidade',function(){
 				var video = document.getElementById("tag-video");
-				video.play();
+				
+				setTimeout(() => {
+				  video.play();
+				}, '3000');
+				
 
 			});
 
