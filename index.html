@@ -26,7 +26,10 @@
      <link rel="stylesheet" href="fontawesome/css/all.css">
      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
 
-
+     <script src="https://cdn.jsdelivr.net/gh/AmagiTech/JSLoader/amagiloader.js"></script>
+     <script>
+ 
+</script>
 
 	<!-- CSS -->
 	 <link rel="stylesheet" type="text/css" href="estilo.css">
@@ -37,10 +40,19 @@
 
 	<script>
 		$(document).ready(function(){
-			
+					
+				
+
+				 
 
 		});
 
+		$( window ).on( "load", function() {
+		  	 $('.container').show();
+				 $('.modal').modal('show');
+				 $('.loader').hide();
+
+		} );
 		$(document).on('click','#btn-aceita-termos-privacidade',function(){
 				var video = document.getElementById("tag-video");
 				
@@ -58,17 +70,13 @@
 
 <!-- Corpo do HTML -->
 <body >
+	
 
-<script src="https://cdn.jsdelivr.net/gh/AmagiTech/JSLoader/amagiloader.js"></script>
-<script>
- AmagiLoader.show();
- setTimeout(() => {
-    AmagiLoader.hide();
-    $('.modal').modal('show');
- }, 3000);
-</script>
+
+
 	<!-- Container -->
 	<div class="container-fluid container ">
+		
 
 		<!-- Header da Pagina -->
 		<header id="header" class="bg-white">
@@ -248,9 +256,12 @@
 	</div>
 	<!-- FINAL CONTAINER -->
 
-
-
-
+		<div class="text-center border border-white">
+			<div class="loader" class=""></div>
+		</div>
+		
+			
+		
 
 
 
