@@ -1,41 +1,20 @@
+$( window ).on( "load", function() {
+		  	 setTimeout(() => {
+				 	 $('.container').show();
+				 	$('.modal').modal('show');
+				 	$('.loader').hide();
+				 	$('.img-loader').hide();
+				}, '2000');
+
+		} );
 
 
-$(document).ready(function() {
+		$(document).on('click','#btn-aceita-termos-privacidade',function(){
+				var video = document.getElementById("tag-video");
+				
+				setTimeout(() => {
+				  video.play();
+				}, '3000');
+				
 
-	
-
-	$('#enviar').val('Autorize o contato').css({'color':'gray'})
-
-	var checkTermos = document.getElementById('aceita-termos');
-  	$(document).on('click','#aceita-termos', function(){
-  		
-  		if(checkTermos.checked){
-  			$('#enviar').val('Enviar');
-  			$('#enviar').removeAttr('disabled');
-  			$('#enviar').css({'color':'black'});
-  		}else{
-  			$('#enviar').val('Autorize o contato');
-  			$('#enviar').attr('disabled','disabled');
-  			$('#enviar').css({'color':'gray'});
-  		}
-  	});
-
-  	$(document).on('click','#enviar', function(){
-  		$('#enviar').val('Enviando...');
-  	})
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-  
-});
+			});
