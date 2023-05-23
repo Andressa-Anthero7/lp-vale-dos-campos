@@ -1,9 +1,8 @@
 $( window ).on( "load", function() {
 		  	 setTimeout(() => {
-				 	 $('.container').show();
-				 	$('.modal').modal('show');
 				 	$('.loader').hide();
-				 	$('.img-loader').hide();
+				 	$('.container').show();
+				 	$('.modal').modal('show');
 				}, '2000');
 
 		} );
